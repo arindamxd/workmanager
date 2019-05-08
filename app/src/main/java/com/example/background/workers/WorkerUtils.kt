@@ -44,7 +44,7 @@ import java.util.UUID
 /**
  * Create a Notification that is shown as a heads-up notification if possible.
  *
- * For this codelab, this is used to show a notification so that you know when different steps
+ * For this project, this is used to show a notification so that you know when different steps
  * of the background work chain are starting
  *
  * @param message Message shown on the notification
@@ -63,8 +63,7 @@ fun makeStatusNotification(message: String, context: Context) {
         channel.description = description
 
         // Add the channel
-        val notificationManager =
-                context.getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager?
+        val notificationManager = context.getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager?
 
         notificationManager?.createNotificationChannel(channel)
     }
@@ -105,8 +104,7 @@ fun blurBitmap(bitmap: Bitmap, applicationContext: Context): Bitmap {
     try {
 
         // Create the output bitmap
-        val output = Bitmap.createBitmap(
-                bitmap.width, bitmap.height, bitmap.config)
+        val output = Bitmap.createBitmap(bitmap.width, bitmap.height, bitmap.config)
 
         // Blur the image
         rsContext = RenderScript.create(applicationContext, RenderScript.ContextType.DEBUG)

@@ -5,10 +5,10 @@ buildscript {
     versions.compileSdk = 28
     versions.minSdk = 16
     versions.targetSdk = 27
-    versions.kotlin = '1.3.30'
+    versions.kotlin = '1.3.31'
     versions.androidx = "1.0.2"
     versions.androidx_legacy = "1.0.0"
-    versions.constraint_layout = "2.0.0-alpha4"
+    versions.constraint_layout = "2.0.0-alpha5"
     versions.glide = "4.8.0"
     versions.work = "2.0.1"
 
